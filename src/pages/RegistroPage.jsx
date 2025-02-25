@@ -37,7 +37,7 @@ const RegistroPage = ({ participants, setParticipants }) => {
     setShowModal(false);
 
     if (modalMessage === "¡Registro exitoso!") {
-      navigate("/");
+      navigate("/participantes");
     }
   };
 

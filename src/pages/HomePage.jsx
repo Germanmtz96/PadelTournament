@@ -30,7 +30,7 @@ const HomePage = ({ participants }) => {
           duration={0.5}
         />
         <button className="btn" onClick={handleParticipate}>
-          ¡Apuntate!
+          ¡Apúntate!
         </button>
       </div>
     </section>

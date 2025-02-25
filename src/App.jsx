@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import HomePage from './pages/HomePage.jsx';
 import RegistroPage from './pages/RegistroPage.jsx';
+import ParticipantesPage from './pages/ParticipantesPage.jsx';
 import ErrorPage from './pages/ErrorPage.jsx';
 import ErrorNotFoundPage from './pages/ErrorNotFoundPage.jsx';
 import MyNavbar from './components/MyNavbar.jsx';
@@ -21,6 +22,7 @@ function App() {
      <Routes>
       <Route path='/' element={<HomePage participants={participants} />} />
       <Route path='/registro' element={<RegistroPage participants={participants} setParticipants={setParticipants} />} />
+      <Route path='/participantes' element={<ParticipantesPage participants={participants} />} />
       <Route path='/error' element={<ErrorPage />} />
       <Route path='*' element={<ErrorNotFoundPage />} />
     </Routes>

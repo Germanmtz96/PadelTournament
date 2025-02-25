@@ -82,19 +82,20 @@ body {
   text-align: center;
 }
 .page h1 {
+  text-transform: uppercase;
   font-size: 3rem;
   margin-bottom: 1rem;
 }
 .page h2 {
+  text-transform: uppercase;
   font-size: 2rem;
   margin-bottom: 1rem;
 }
 
 .page h3 {
-  padding-top: 4rem;
+  margin: 1rem;
   font-weight: 300;
   max-width: 400px;
-  margin-bottom: 3rem;
 }
 
 .btn {
@@ -118,7 +119,7 @@ body {
   height: 50px;
   background: #fff;
   color: #000;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-family: 'Poppins';
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -161,20 +162,22 @@ body {
 }
 
 .participantes {
+  width: 180px;
+  height: 80px;
   background-color: rgba(0, 0, 0, 0.3);
   color: #fff;
   border-radius: 5%;
-  padding: 8px;
+  padding: 20px;
   font-family: 'Orbitron';
-  margin-top: 8rem;
+  margin-top: 5rem;
   font-size: 24px;
   display: flex;
   justify-content: center;
 }
 
 .participantes img {
-  width: 32px;
-  height: 32px;
+  width: 36px;
+  height: 36px;
   margin-right: 20px;
 }
 
@@ -250,6 +253,14 @@ transition: background-color 0.4s ease;
   padding: 0 20px;
 }
 
+.proximamente {
+  position: absolute;
+  font-size: 12px; 
+  color: #000; 
+  margin-top: 18px;
+  margin-left: 16px;
+}
+
 .navbar-logo {
   font-size: 20px;
   font-weight: bold;
@@ -278,6 +289,47 @@ transition: background-color 0.4s ease;
 .navbar-link:hover {
   color: #ccc;
 }
+
+/* ParticipantesPage.css */
+.participantes-container {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.participantes-title {
+  margin-top: 58px;
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.participantes-total {
+  font-size: 18px;
+  margin-bottom: 40px;
+  color: #555;
+}
+
+.participantes-empty {
+  font-style: italic;
+  color: #888;
+}
+
+.participantes-list {
+  list-style-type: none;
+  padding: 0;
+  color: #000;
+}
+
+.participante-item {
+  background-color: #f4f4f4;
+  color: #000;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 8px;
+}
+
 
 @media (min-width:900px){
   .page h1 {
