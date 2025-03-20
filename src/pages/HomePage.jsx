@@ -4,15 +4,11 @@ import FlipClockCountdown from "@leenguyen/react-flip-clock-countdown";
 import "@leenguyen/react-flip-clock-countdown/dist/index.css";
 import VideoBg from "../assets/videoPadel.mp4";
 
-const HomePage = ({ participants }) => {
+const HomePage = () => {
   const navigate = useNavigate();
 
   const handleParticipate = () => {
-    if (participants.length >= 20) {
-      alert("¡Cupo completo!");
-    } else {
-      navigate("/registro");
-    }
+      navigate("/participantes");
   };
 
   return (
@@ -30,7 +26,7 @@ const HomePage = ({ participants }) => {
           duration={0.5}
         />
         <button className="btn" onClick={handleParticipate}>
-          ¡Apúntate!
+          ¡Paticipantes!
         </button>
       </div>
     </section>

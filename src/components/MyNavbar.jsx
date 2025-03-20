@@ -17,6 +17,9 @@ function MyNavbar() {
         <Link to="/participantes" className="navbar-link">
           Participantes
         </Link>
+        <Link to="/partidos" className="navbar-link">
+          Partidos
+        </Link>
       </div>
     </nav>
   )

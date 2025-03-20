@@ -1,20 +1,35 @@
 import React from 'react'
 
-function ParticipantesPage({ participants }) {
-  return (
-    <div className="participantes-container">
-      <h1 className="participantes-title">Participantes</h1>
 
-      <p className="participantes-total">{participants.length}/20</p>
-      {participants.length === 0 ? (
-        <p className="participantes-empty">No hay participantes registrados.</p>
-      ) : (
-        <ul className="participantes-list">
-          {participants.map((participants, index) => (
-            <li key={index} className="participante-item">{participants}</li>
-          ))}
+function ParticipantesPage() {
+  return (
+    <div className="container">
+
+      <h1 className="title">Participantes</h1>
+
+      <p className="participantes-total">20/20</p>
+     
+        
+        <ul className="participantes-list"> grupo uno 
+         
+            <li className="participante-item">rodera-antonio</li>
+            <li className="participante-item">ivana-tomy</li>
+            <li className="participante-item">toni-edu</li>
+            <li className="participante-item">marina-alex</li>
+            <li className="participante-item">germán-yeray</li>
+            <li className="participante-item">mario-david</li>
+          
         </ul>
-      )}
+        <ul className="participantes-list"> grupo dos
+
+            <li className="participante-item">matin-manu</li>
+            <li className="participante-item">raquel-maria</li>
+            <li className="participante-item">cintia-alejandro</li>
+            <li className="participante-item">arantxa-quesada</li>
+            <li className="participante-item">ivan-anabel</li>
+            <li className="participante-item">medy-adri</li>
+
+        </ul>
     </div>
   )
 }
