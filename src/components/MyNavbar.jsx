@@ -13,7 +13,7 @@ function MyNavbar() {
         <Link to="/clasificacion" className="navbar-link">
           Clasificación
         </Link>
-        <span className="proximamente">Próximamente</span>
+        <span className="proximamente">¡Finalizado!</span>
         <Link to="/participantes" className="navbar-link">
           Participantes
         </Link>

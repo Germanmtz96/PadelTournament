@@ -18,15 +18,15 @@ const HomePage = () => {
       <div className="page__content">
         <h1>Cumpleaños</h1>
         <h2>World Padel Tour</h2>
-        <h3>¡Próximamente!</h3>
+        <h3>¡Próximamente el 2026!</h3>
         <FlipClockCountdown
-          to={new Date("March 23, 2025 00:00:00").getTime()}
+          to={new Date("March 23, 2026 00:00:00").getTime()}
           className="flip-clock"
           labels={["DÍAS", "HORAS", "MINUTOS", "SEGUNDOS"]}
           duration={0.5}
         />
         <button className="btn" onClick={handleParticipate}>
-          ¡Paticipantes!
+          ¡Ver Paticipantes Anteriores!
         </button>
       </div>
     </section>
